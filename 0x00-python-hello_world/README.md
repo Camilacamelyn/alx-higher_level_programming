@@ -60,7 +60,7 @@ Complete this source code to print object-oriented programming with Python, foll
 #### [9. Easter Egg](9-easter_egg.py)
 Write a Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
 - Your script should be maximum 98 characters long (please check with wc -m 9-easter_egg.py)
-#### [10. Linked list cycle](10-check_cycle.c, lists.h)
+#### [10. Linked list cycle](10-check_cycle.c)
 Technical interview preparation:
 - You are not allowed to google anything
 - Whiteboard first
@@ -81,4 +81,11 @@ Write a script that compiles a Python script file.
 The Python file name will be stored in the environment variable $PYFILE
 The output filename has to be $PYFILEc (ex: export PYFILE=my_main.py => output filename: my_main.pyc)
 #### [13. ByteCode -> Python #1](102-magic_calculation.py)
-Write the Python function def magic_calculation(a, b): that does exactly the same as the following Python bytecode:
+Write the Python function def magic_calculation(a, b): that does exactly the same as the following Python bytecode: 
+3           0 LOAD_CONST               1 (98)
+              3 LOAD_FAST                0 (a)
+              6 LOAD_FAST                1 (b)
+              9 BINARY_POWER
+             10 BINARY_ADD
+             11 RETURN_VALUE
+- Tip: Python bytecode
