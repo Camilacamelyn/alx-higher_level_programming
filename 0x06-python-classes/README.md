@@ -1,5 +1,5 @@
 ####  <strong>Python - Classes and Objects</strong>
-
+![This is an image](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/247/oop-meme.jpg)
 ### [0. My first square](0-square.py)
 _Write an empty class `Square` that defines a square:_
 - You are not allowed to import any module
