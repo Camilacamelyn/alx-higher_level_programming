@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-''' Creating a class Rectangle'''
+"""creating a class called Rectangle"""
 
 
 class Rectangle:
-    '''Initializing class Rectangle'''
+    """created a class Rectangles, assigning values"""
     def __init__(self, width=0, height=0):
-        self.heigth = height
+        self.height = height
         self.width = width
 
     @property
@@ -18,6 +18,7 @@ class Rectangle:
             raise TypeError("width must be an integer")
         elif value < 0:
             raise ValueError("width must be >= 0")
+
         self.__width = value
 
     @property
@@ -30,4 +31,5 @@ class Rectangle:
             raise TypeError("height must be an integer")
         elif value < 0:
             raise ValueError("height must be >= 0")
+
         self.__height = value
