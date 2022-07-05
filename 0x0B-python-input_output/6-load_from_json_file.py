@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""Creat object from JSON files"""
+"""Create object from a JSON file"""
 
 
 import json
 
 
 def load_from_json_file(filename):
-    """ function that creates an object from a JSON file"""
+    """Function that creates an Object from a “JSON file”"""
 
-    with open(filename, 'c') as file:
-        return json.load(file)
+    with open(filename, 'r') as Zura:
+        return json.load(Zura)
