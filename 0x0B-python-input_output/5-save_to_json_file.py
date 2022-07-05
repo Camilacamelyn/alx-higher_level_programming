@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""objects to a text file"""
+"""Object to a text file"""
 
 
 import json
@@ -8,5 +8,5 @@ import json
 def save_to_json_file(my_obj, filename):
     """function that writes an object to a file"""
 
-    with open(filename, 'a') as f:
-        f.write(json.dumps(my_str))
+    with open(filename, 'w') as w:
+        w.write(json.dumps(my_obj))
