@@ -1,23 +1,15 @@
 #!/usr/bin/python3
-"""Counts number of lines in a file.
+
+
+"""
+creating a function that writes a string to a text file
 """
 
 
-def number_of_lines(filename=""):
-    """Counts lines in filename.
-
-    Args:
-        - filename: name of the file
-
-    Returns:
-        - number of lines
+def write_file(filename="", text=""):
     """
-
-    count = 0
-
-    with open(filename) as f:
-        text = f.readlines()
-        for line in text:
-            count += 1
-
-    return count
+    prototype for the function
+    """
+    with open(filename, 'w', encoding="utf-8") as f:
+        f.write(text)
+        return len(text)
